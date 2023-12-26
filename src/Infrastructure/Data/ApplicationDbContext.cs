@@ -14,6 +14,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplica
     public DbSet<TodoList> TodoLists => Set<TodoList>();
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+    public DbSet<Booking> Bookings  => Set<Booking>();
+    public DbSet<Clinic> Clinics => Set<Clinic>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
