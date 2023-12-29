@@ -15,6 +15,7 @@ public class PurgeTodoListsCommandHandler : IRequestHandler<PurgeTodoListsComman
     public PurgeTodoListsCommandHandler(IApplicationDbContext context)
     {
         _context = context;
+
     }
 
     public async Task Handle(PurgeTodoListsCommand request, CancellationToken cancellationToken)
